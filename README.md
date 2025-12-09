@@ -40,7 +40,7 @@ All steps are integrated into a single executable script:
 
 run_nnunet_full_pipeline.sh
 
-===================== 📁 Dataset Structure (nnU-Net v2 Format)  =================================
+===================== 📁 Dataset Structure (nnU-Net v2 Format)  =======================
 
 Before running the pipeline, make sure your dataset is placed in:
 
@@ -117,7 +117,7 @@ Ensemble command
 
 It is fully self-contained and can reproduce the exact model we submitted.
 
-===================== ⚠️ Important Notes
+===================== ⚠️ Important Notes  =================================
 
 Please manually adjust the three environment paths at the top of the script:
 
@@ -130,7 +130,7 @@ Because nnU-Net is installed via pip, we do not include the nnUNetv2 source code
 
 This submission includes only our scripting workflow, preprocessing, and ensemble logic.
 
-===================== 🏆 Summary
+===================== 🏆 Summary  =================================
 
 Our method leverages nnU-Net v2’s AutoML capabilities to automatically determine:
 
