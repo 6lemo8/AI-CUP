@@ -12,7 +12,7 @@ Using nnU-Net v2 (2D + 3D FullRes + 3D LowRes Ensemble)
 
 最終預測結果由上述三個模型進行 ensemble（集成推論），並在 leaderboard 上獲得了我們隊伍的最佳成績。
 
-## =========== 🚀 Overview of Our Pipeline  ===========
+##  🚀 Overview of Our Pipeline  
 
 本研究依照 nnU-Net v2 的標準訓練流程執行，包含：
 
@@ -32,7 +32,7 @@ Using nnU-Net v2 (2D + 3D FullRes + 3D LowRes Ensemble)
 所有步驟皆整合於單一可執行腳本：run_nnunet_full_pipeline.sh 
 也可拆成單一步驟執行 : 分別執行 01~06.sh（依需求拆分）
 
-## ============== 📁 Dataset Structure (nnU-Net v2 Format)  ============
+## 📁 Dataset Structure (nnU-Net v2 Format)  
 
 在執行 pipeline 之前，請確認資料集已放置於以下位置：
 
@@ -44,7 +44,7 @@ $nnUNet_raw/Dataset001_AICUP/
 
 這是 nnU-Net v2 官方規定的資料結構。
 
-## ================= 🔧 Environment Requirements  ================
+## 🔧 Environment Requirements  
 
 1.Windows 10 + WSL / Linux
 2.Python 3.10
@@ -52,7 +52,7 @@ $nnUNet_raw/Dataset001_AICUP/
 4.PyTorch
 5.nnU-Net v2（pip 安裝）
 
-## =============== 📄 File Explanation  ==============
+##  📄 File Explanation 
 run_nnunet_full_pipeline.sh
 此檔案包含以下內容：
 
@@ -63,7 +63,7 @@ nnU-Net 全部訓練指令
 模型集成（ensemble）流程
 此腳本可重現我們提交的模型推論結果。
 
-## ================ ⚠️ Important Notes  ===============
+##  ⚠️ Important Notes  
 請務必修改腳本開頭的三個環境變數，使其符合你自己的資料路徑：
 export nnUNet_raw=...
 export nnUNet_preprocessed=...
@@ -72,6 +72,3 @@ export nnUNet_results=...
 另外：
 nnU-Net v2 由 pip 安裝，因此本 repository 不包含 nnUNetv2 的原始程式碼
 本提交檔僅包含我們隊伍自行撰寫的流程腳本、前處理與 ensemble 相關邏輯
-## ================== 🙌 Contact ==================
-
-如對此程式或流程有任何疑問，歡迎與我們隊伍聯繫
