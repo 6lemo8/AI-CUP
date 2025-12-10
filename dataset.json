@@ -1,0 +1,41 @@
+{
+    "channel_names": {
+        "0": "CT"
+    },
+    "labels": {
+        "background": "0",
+        "Segment_1": "1",
+        "Segment_2": "2",
+        "Segment_3": "3"
+    },
+    "label_descriptions": {
+        "Segment_1": "\u5fc3\u81df\u808c\u8089 (\u7da0\u8272)",
+        "Segment_2": "\u4e3b\u52d5\u8108\u74e3\u819c (\u9ec3\u8272)",
+        "Segment_3": "\u9223\u5316\uff08\u4e0d\u4e00\u5b9a\u6703\u6709\uff09(\u7d05\u8272)"
+    },
+    "labels_colors": {
+        "0": [
+            0,
+            0,
+            0
+        ],
+        "1": [
+            0,
+            255,
+            0
+        ],
+        "2": [
+            255,
+            255,
+            0
+        ],
+        "3": [
+            255,
+            0,
+            0
+        ]
+    },
+    "numTraining": 50,
+    "file_ending": ".nii.gz",
+    "overwrite_image_reader_writer": "SimpleITKIO"
+}
