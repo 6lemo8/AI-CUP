@@ -1,5 +1,4 @@
-AI CUP 2025 — Cardiac Muscle Segmentation
-Using nnU-Net v2 (2D + 3D FullRes + 3D LowRes Ensemble)
+# AI CUP 2025 — Cardiac Muscle Segmentation Using nnU-Net v2 (2D + 3D FullRes + 3D LowRes Ensemble)
 
 本專案為 AI CUP 2025「心臟肌肉影像分割」競賽使用的完整模型流程。
 我們採用 nnU-Net v2 作為主要的自動化（AutoML）影像分割框架，使用預設參數，並訓練以下三種模型設定：
