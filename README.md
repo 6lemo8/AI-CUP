@@ -46,11 +46,17 @@ $nnUNet_raw/Dataset001_AICUP/
 
 ## 🔧 Environment Requirements  
 
-1.Windows 10 + WSL / Linux
-2.Python 3.10
-3.NVIDIA GPU
-4.PyTorch
-5.nnU-Net v2（pip 安裝）
+1.	作業系統（OS）：Ubuntu 22.04.4 LTS
+2.	開發介面：JupyterLab（conda 建立虛擬環境）
+3.	程式語言版本：Python 3.10
+4.	主要套件與工具：
+o	PyTorc版本：2.6.0
+o	CUDA : 12.4
+o	nnU-Net v2
+o	NumPy:1.26.4、SciPy: 1.15.3
+o	nibabel: 5.2.1、SimpleITK: 2.4.0
+5.	硬體設備：NVIDIA RTX A6000（48GB）
+
 
 ##  📄 File Explanation 
 run_nnunet_full_pipeline.sh
