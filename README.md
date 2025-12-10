@@ -1,8 +1,8 @@
 AI CUP 2025 — Cardiac Muscle Segmentation
 Using nnU-Net v2 (2D + 3D FullRes + 3D LowRes Ensemble)
-=======================================================================================================================
+
 本專案為 AI CUP 2025「心臟肌肉影像分割」競賽使用的完整模型流程。
-我們採用 nnU-Net v2 作為主要的自動化（AutoML）影像分割框架，並訓練以下三種模型設定：
+我們採用 nnU-Net v2 作為主要的自動化（AutoML）影像分割框架，使用預設參數，並訓練以下三種模型設定：
 
 2D U-Net
 
@@ -28,7 +28,7 @@ Using nnU-Net v2 (2D + 3D FullRes + 3D LowRes Ensemble)
 7.在 imagesTs 上進行推論
 8.三模型集成（2D + 3D_fullres + 3D_lowres ensemble）
 
-## ! 務必記得修該路徑 !
+!!!! 務必記得修該路徑 !!!!
 所有步驟皆整合於單一可執行腳本：run_nnunet_full_pipeline.sh 
 也可拆成單一步驟執行 : 分別執行 01~06.sh（依需求拆分）
 
@@ -40,7 +40,7 @@ $nnUNet_raw/Dataset001_AICUP/
     ├── imagesTr/
     ├── labelsTr/
     ├── imagesTs/
-    └── dataset.json
+    └── dataset.json (以附上)
 
 這是 nnU-Net v2 官方規定的資料結構。
 
@@ -59,15 +59,21 @@ o	nibabel: 5.2.1、SimpleITK: 2.4.0
 
 
 ##  📄 File Explanation 
-run_nnunet_full_pipeline.sh
-此檔案包含以下內容：
+1.run_nnunet_full_pipeline.sh
+放在scripts資料夾裡，可一次跑完所有指令，此檔案包含以下內容：
+    1) 環境變數設定
+    2) nnU-Net 全部訓練指令
+    3) 驗證流程
+    4) 推論流程
+    5) 模型集成（ensemble）流程
 
-環境變數設定
-nnU-Net 全部訓練指令
-驗證流程
-推論流程
-模型集成（ensemble）流程
-此腳本可重現我們提交的模型推論結果。
+2.01~06.sh
+放在scripts資料夾裡，將指令依照步驟拆分，可分步執行
+
+
+3.dataset.json 
+使用nnU-Netv2的檔案 告訴nnU-Net要分幾個Lable
+
 
 ##  ⚠️ Important Notes  
 請務必修改腳本開頭的三個環境變數，使其符合你自己的資料路徑：
