@@ -36,9 +36,8 @@ Prediction on imagesTs
 
 Final three-model ensemble
 
-All steps are integrated into a single executable script:
-
-run_nnunet_full_pipeline.sh
+All steps are integrated into a single executable script: run_nnunet_full_pipeline.sh
+It can also run separately into 01~06.sh
 
 ## ============== 📁 Dataset Structure (nnU-Net v2 Format)  ============
 
@@ -55,7 +54,7 @@ This is the official nnU-Net v2 dataset format.
 
 ## ================= 🔧 Environment Requirements  ================
 
-Linux / Ubuntu environment
+window10
 
 Python 3.10
 
@@ -129,24 +128,6 @@ export nnUNet_results=...
 Because nnU-Net is installed via pip, we do not include the nnUNetv2 source code in this repository.
 
 This submission includes only our scripting workflow, preprocessing, and ensemble logic.
-
-## ============== 🏆 Summary  ====================
-
-Our method leverages nnU-Net v2’s AutoML capabilities to automatically determine:
-
-network architecture
-
-patch size
-
-batch size
-
-normalization
-
-augmentation
-
-deep supervision settings
-
-We then enhance performance by training multi-configuration models and performing cross-model ensemble, achieving strong segmentation quality on the AI CUP test set.
 
 ## ================== 🙌 Contact ==================
 
